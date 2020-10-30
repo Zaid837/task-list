@@ -1,4 +1,4 @@
-#TASK LIST
+# TASK LIST
 
 This is a simple task list (todo list) used to save Your daily tasks in order not to miss anything.
 

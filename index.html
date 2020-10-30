@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task list</title>
+    <link rel="icon" href="./images/422-4223456_to-do-list-vector-todo-list-logos.png">
+    <link rel="stylesheet" href="dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-con">
+        <h1 class="logo">Task List</h1>
+    </div>
+    <!-- header ends -->
+
+    <!-- alert section-->
+    <div id="msg">
+    </div> 
+    
+    <!-- alert section ends -->
+
+    <!-- form section -->
+    <form action="" id="itemForm">
+        <div class="input-group">
+            <input type="text" id="itemInput" value="" placeholder="What would you like to add?">
+            <button class="todoBtn" type="submit">Add a task</button>
+        </div>
+    </form>
+    <!-- end of form -->
+
+    <!-- tasks section -->
+    <div class="task-container">
+        <div class="task-list">
+            <!-- <div class="task task-con">
+                <h5 class="task-name">Do laundry</h5>
+                <div class="item-icons">
+                    <a href="#" class="complete-icon item-icon"><i class="far fa-check-circle"></i></a>
+                    <a href="#" class="edit-icon item-icon"><i class="far fa-edit"></i></a>
+                    <a href="#" class="delete-icon item-icon"><i class="fas fa-trash"></i></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- tasks section ends -->
+
+    <!-- clear button -->
+    <div class="clear">
+        <button id="clear-btn" type="button">Clear all tasks</button>
+    </div>
+    <!-- clear button ends -->
+
+    <!-- footer -->
+    <footer>
+        <p>
+            Tamilore Zaid  
+            <a href=""><i class="fab fa-github socials"></i></a>
+            <a href="https://www.linkedin.com/in/tamilorezaid/" target="blank"><i class="fab fa-linkedin socials"></i></a>
+            <a href="https://twitter.com/Zaid_tamilore" target="blank"><i class="fab fa-twitter socials"></i></a></a>
+        </p>
+    </footer>
+    
+
+    <script src="dist/task.js"></script>
+</body>
+</html>

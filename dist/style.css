@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+/* header */
+.header-con{
+    background-image: linear-gradient(to right,#00e59e, #18379a);
+    height: 60px;
+    width: 100%;
+}
+.logo{
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+/* button styles */
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #18379a;
+    text-transform: capitalize;
+    background: #00e59e;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: #18379a;
+    color: #fff;
+}
+button:focus {outline:0;}
+.clear{
+    text-align: center;
+}
+#clear-btn{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* button styles ends */
+
+
+/* form styles */
+form{
+    text-align: center;
+    margin-top: 70px;
+}
+/* form styles ends */
+
+
+/* input button */
+input[type=text] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input[type=text]:focus{
+    border: 2px solid #00e59e;
+}
+/* input ends */
+
+
+/* task section styles */
+.task-container{
+    text-align: center;
+    margin: 20px 50px;
+}
+.task-con{
+    margin: 15px 0px;
+}
+.task-list{
+    justify-content: center;
+}
+.task{
+    padding: 10px;
+    display: flex;
+}
+.item-icons{
+    margin-left: auto;
+}
+/* task section styles ends */
+
+/* icon styles */
+.item-icon{
+    margin: 5px;
+}
+.delete-icon{
+    color: red;
+    opacity: 1.0;
+}
+.delete-icon:visited{
+    color: red;
+}
+.complete-icon:visited{
+    color: green;
+}
+.complete-icon{
+    color: green;
+    opacity: 1.0;
+}
+.edit-icon:visited{
+    color: blue;
+    opacity: 1.0;
+}
+/* icon styles ends */
+#msg{
+    margin: 0 15px;
+}
+.alert {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.visibility{
+    opacity: 0.3;
+}
+.showItem{
+    display: block;
+}
+.danger{
+    background-color: #d9534f;
+}
+.success{
+    background-color: #5cb85c;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.socials{
+    margin-right: 5px;
+    color: black;
+}
+.socials:hover{
+    color: #18379a;
+}
+/* media qyueries */
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+    .item-icon{
+        margin: 2px;
+    }
+    .task-container{
+        margin: 15px 15px;
+    }
+}

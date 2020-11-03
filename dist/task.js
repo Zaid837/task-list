@@ -38,8 +38,9 @@ itemForm.addEventListener("submit", function(event){
     const textValue = itemInput.value;
     //console.log(textValue);
 
-if(textValue === ''){
+if(textValue.trim() == '' || textValue.trim() == null || textValue.trim() == " "){
     showFeedback('please enter valid value', 'danger');
+    return false;
 }
 else{
     //add item
@@ -104,12 +105,13 @@ function handleItems(textValue){
     const items = itemList.querySelectorAll('.task');
     items.forEach(function(item) {
         if(item.querySelector('.task-name').textContent === textValue) {
+            
             //complete event listener
             item.querySelector('.complete-icon').addEventListener('click', function(){
                 item.querySelector('.task-name').classList.toggle('completed');
                 this.classList.toggle('visibility');
             });
-
+            
             //edit event listener
             item.querySelector('.edit-icon').addEventListener('click', function(){
                 itemInput.value = textValue;

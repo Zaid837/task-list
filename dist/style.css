@@ -151,7 +151,7 @@ footer{
 .socials:hover{
     color: #18379a;
 }
-/* media qyueries */
+/* media queries */
 @media only screen and (max-width: 600px) {
     body{
         font-size: 14px;
@@ -160,6 +160,12 @@ footer{
         margin: 2px;
     }
     .task-container{
-        margin: 15px 15px;
+        margin: 15px 25px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .task-container{
+        margin: 15px ;
     }
 }

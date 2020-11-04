@@ -84,7 +84,7 @@ function showFeedback(msg, msgClass){
     setTimeout(function() {
         // document.getElementById('msg').classList.remove();
         document.getElementById('msg').innerHTML=``
-    }, 3000);
+    }, 1000);
 }
 
 //add item
@@ -116,6 +116,7 @@ function handleItems(textValue){
             item.querySelector('.edit-icon').addEventListener('click', function(){
                 itemInput.value = textValue;
                 itemList.removeChild(item);
+                                
                 
 
                 itemData = itemData.filter(function(item){

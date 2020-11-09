@@ -6,15 +6,17 @@ const itemList = document.querySelector('.task-list');
 const clearBtn = document.getElementById('clear-btn');
 const feedback = document.querySelector('.feedback');
 
+
+
 //let itemData = [];
 
 let itemData = JSON.parse(localStorage.getItem('list')) || [];
 if(itemData.length > 0){
     itemData.forEach(function(singleItem){
         itemList.insertAdjacentHTML(
-            "beforeend", 
+            "beforeend",
             `
-            <div class= "task task-con">
+            <div class= "task task-con" id="taskFilter">
                 <h5 class="task-name">${singleItem}</h5>
                 <div class="item-icons">
                     <a href="#" class="complete-icon item-icon"><i class="far fa-check-circle"></i></a>
@@ -28,6 +30,21 @@ if(itemData.length > 0){
     });
 }
 
+// filter bar
+// function myFunction() {
+//     let input = document.getElementById('filterInput');
+//     filter = input.value;
+    
+//     taskCon = itemList.children;
+//     for (i = 0; i < taskCon.length; i++) {
+//         a = taskCon[i].querySelector('.task');
+//         txtValue = a.innerHTML;
+//         console.log(txtValue); 
+//     }
+// }
+
+// filter bar ends
+//console.log(taskCon);
 //get values from local storage 
 
 
@@ -91,6 +108,7 @@ function showFeedback(msg, msgClass){
 function addItem(value){
    const div = document.createElement("div");
    div.classList.add("task", "task-con");
+   div.id = "taskFilter";
    div.innerHTML = `<h5 class="task-name">${value}</h5>
    <div class="item-icons">
        <a href="#" class="complete-icon item-icon"><i class="far fa-check-circle"></i></a>

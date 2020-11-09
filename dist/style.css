@@ -15,10 +15,20 @@ body{
     width: 100%;
 }
 .logo{
-    padding-top: 10px;
+    padding: 10px;
     text-align: center;
     color: #fff;
+    /* display: inline; */
 }
+/* #filterInput{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 200px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #000;
+} */
 /* button styles */
 button{
     padding: 10px 20px;
@@ -55,14 +65,14 @@ form{
 
 
 /* input button */
-input[type=text] {
+.input-group > input[type=text] {
     width: 50%;
     padding: 10px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 5px;
 }
-input[type=text]:focus{
+.input-group> input[type=text]:focus{
     border: 2px solid #00e59e;
 }
 /* input ends */

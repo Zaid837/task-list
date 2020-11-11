@@ -30,21 +30,24 @@ if(itemData.length > 0){
     });
 }
 
-// filter bar
-// function myFunction() {
-//     let input = document.getElementById('filterInput');
-//     filter = input.value;
-    
-//     taskCon = itemList.children;
-//     for (i = 0; i < taskCon.length; i++) {
-//         a = taskCon[i].querySelector('.task');
-//         txtValue = a.innerHTML;
-//         console.log(txtValue); 
-//     }
-// }
+function myFunction() {
+    let input = document.getElementById('filterInput');
+    filterValue = input.value.toUpperCase();
+     
+    let tasks =  document.querySelectorAll('#taskFilter');
+    // let childElement = names.firstElementChild
+    Array.from(tasks).forEach((task)=>{
+        let nameText = task.firstElementChild.textContent;
+        //console.log(nameText);
+        if(nameText.toUpperCase().indexOf(filterValue) != -1){
+            task.style.display = "block";         
+        } else {
+            task.style.display = "none";
+        }
+    })
+}
+ 
 
-// filter bar ends
-//console.log(taskCon);
 //get values from local storage 
 
 
@@ -140,7 +143,7 @@ function handleItems(textValue){
                 itemData = itemData.filter(function(item){
                     return item !== textValue;
                 });
-                localStorage.setItem('list', JSON.stringify(itemData));
+                // localStorage.setItem('list', JSON.stringify(itemData));
                 
             });
 

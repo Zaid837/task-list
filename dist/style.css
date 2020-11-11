@@ -14,13 +14,17 @@ body{
     height: 60px;
     width: 100%;
 }
+
+.red{
+    background-color: red;
+}
 .logo{
     padding: 10px;
     text-align: center;
     color: #fff;
-    /* display: inline; */
+    display: inline;
 }
-/* #filterInput{
+#filterInput{
     float: right;
     margin-top: 10px;
     margin-right: 20px;
@@ -28,7 +32,8 @@ body{
     padding: 10px 15px;
     border-radius: 5px;
     border: 2px solid #000;
-} */
+    text-transform: capitalize;
+}
 /* button styles */
 button{
     padding: 10px 20px;
@@ -71,6 +76,7 @@ form{
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 5px;
+    text-transform: capitalize;
 }
 .input-group> input[type=text]:focus{
     border: 2px solid #00e59e;
@@ -98,6 +104,7 @@ form{
 }
 .task-name{
     word-break: break-all;
+    text-transform: capitalize;
 }
 .item-icons{
     margin-left: auto;
@@ -147,6 +154,9 @@ form{
 }
 .showItem{
     display: block;
+}
+.hideItem{
+    display: none;
 }
 .danger{
     background-color: #d9534f;

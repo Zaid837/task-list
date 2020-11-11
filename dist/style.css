@@ -99,12 +99,12 @@ form{
 }
 .task{
     padding: 10px;
-    display: flex;
     border-bottom: 1px solid #000;
 }
 .task-name{
     word-break: break-all;
     text-transform: capitalize;
+    float: left;
 }
 .item-icons{
     margin-left: auto;
